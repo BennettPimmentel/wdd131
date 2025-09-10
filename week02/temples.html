@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Temple Album</title>
+  <meta name="description" content="Album responsivo de templos - WDD131" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Temple Album</h1>
+
+      <button id="menu-btn" class="menu-btn" aria-controls="main-nav" aria-expanded="false" aria-label="Abrir menú">
+        <span class="icon">≡</span>
+      </button>
+
+      <nav id="main-nav" class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#" title="Home">Home</a>
+        <a href="#" title="Old">Old</a>
+        <a href="#" title="New">New</a>
+        <a href="#" title="Large">Large</a>
+        <a href="#" title="Small">Small</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Temples Around the World</h2>
+
+    <section class="gallery" aria-label="Album de templos">
+
+      <figure>
+        <img src="images/temple2.webp" alt="Temple 1">
+        <figcaption>Templo de Tijuana, México</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple3.webp" alt="Temple 2">
+        <figcaption>Templo Gila Valley, Arizona</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple4.webp" alt="Temple 3">
+        <figcaption>Templo de Bogotá, Colombia</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple5.webp" alt="Temple 4">
+        <figcaption>Templo de Fukuoka, Japón</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple1.webp" alt="Temple 5">
+        <figcaption>Templo de Lima, Perú</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple6.webp" alt="Temple 6">
+        <figcaption>Templo de San Salvador, El Salvador</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple7.webp" alt="Temple 7">
+        <figcaption>Templo de Mesa, Arizona</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple8.webp" alt="Temple 8">
+        <figcaption>Templo de la Ciudad de México</figcaption>
+      </figure>
+      <figure>
+        <img src="images/temple9.webp" alt="Temple 9">
+        <figcaption>Templo de Portland, Oregón</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="copyright-year"> </span>Bennett Scott Pimentel</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
