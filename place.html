@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peru - Country Page</title>
+  <link rel="stylesheet" href="place.css">
+  <script src="place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Peru</h1>
+  </header>
+
+  <section class="hero">
+    <picture>
+      <source srcset="Peru" media="(min-width: 600px)">
+      <img src="peru.webp" alt="Machu Picchu in Peru">
+    </picture>
+
+    <div class="data-box">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Area:</strong> 1,285,216 sq km</li>
+        <li><strong>Population:</strong> 34,352,719</li>
+        <li><strong>Capital:</strong> Lima</li>
+        <li><strong>Languages:</strong> Spanish, Quechua, Aymara</li>
+        <li><strong>Currency:</strong> Peruvian Sol</li>
+        <li><strong>Time Zone:</strong> UTC-5</li>
+        <li><strong>Calling Code:</strong> +51 9967447744</li>
+        <li><strong>Internet TLD:</strong> .pe</li>
+      </ul>
+    </div>
+
+    <div class="weather-box">
+      <h2>Weather <span class="icon">⛅</span></h2>
+      <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+      <p><strong>Conditions:</strong> Partly Cloudy</p>
+      <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+      <p><strong>Wind Chill:</strong> <span id="chill"></span></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Bennett Scott Enrique Pimentel Alegre - Peru | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

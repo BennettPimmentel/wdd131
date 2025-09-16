@@ -1,0 +1,67 @@
+:root {
+  --primary: #d62828;
+  --secondary: #003049;
+  --light: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light);
+  color: var(--secondary);
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.data-box, .weather-box {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+}
+
+.data-box {
+  top: 10%;
+  left: 5%;
+  max-width: 220px;
+}
+
+.weather-box {
+  bottom: 10%;
+  right: 5%;
+  max-width: 200px;
+}
+
+.data-box h2, .weather-box h2 {
+  margin-top: 0;
+  background: var(--secondary);
+  color: white;
+  padding: 0.3rem;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--primary);
+  color: white;
+  font-size: 0.9rem;
+}
