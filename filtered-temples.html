@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Filtered Temples</title>
+  <meta name="description" content="Filtered temple gallery - WDD131" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Acme&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="filtered-temples.css">
+  <link rel="stylesheet" href="filtered-temples-large.css">
+  <script src="filtered-temples.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Filtered Temples</h1>
+
+      <button id="menu-btn" class="menu-btn" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+        <span class="icon">≡</span>
+      </button>
+
+      <nav id="main-nav" class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#" data-filter="home">Home</a>
+        <a href="#" data-filter="old">Old</a>
+        <a href="#" data-filter="new">New</a>
+        <a href="#" data-filter="large">Large</a>
+        <a href="#" data-filter="small">Small</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Temples Around the World</h2>
+    <section class="gallery" aria-label="Temple gallery"></section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="copyright-year"></span> Bennett Scott Pimentel</p>
+    <p>Last modified: <span id="last-modified"></span></p>
+  </footer>
+</body>
+</html>
