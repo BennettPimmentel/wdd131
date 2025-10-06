@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form method="get" action="review.html">
+
+      <label for="productName">Product Name:</label>
+      <select id="productName" name="productName" required>
+        <option value="" disabled selected>Select a Product ...</option>
+      </select>
+
+      <fieldset>
+        <legend>Overall Rating</legend>
+        <label><input type="radio" id="rate1" name="rating" value="1" required> ☆</label>
+        <label><input type="radio" id="rate2" name="rating" value="2"> ☆☆</label>
+        <label><input type="radio" id="rate3" name="rating" value="3"> ☆☆☆</label>
+        <label><input type="radio" id="rate4" name="rating" value="4"> ☆☆☆☆</label>
+        <label><input type="radio" id="rate5" name="rating" value="5"> ☆☆☆☆☆</label>
+      </fieldset>
+
+      <label for="installationDate">Date of Installation:</label>
+      <input type="date" id="installationDate" name="installationDate" required>
+
+      <fieldset>
+        <legend>Useful Features (check all that apply):</legend>
+        <label><input type="checkbox" id="feature1" name="features" value="durability"> Durability</label>
+        <label><input type="checkbox" id="feature2" name="features" value="design"> Design</label>
+        <label><input type="checkbox" id="feature3" name="features" value="performance"> Performance</label>
+        <label><input type="checkbox" id="feature4" name="features" value="price"> Price</label>
+      </fieldset>
+
+      <label for="reviewText">Written Review:</label>
+      <textarea id="reviewText" name="reviewText" rows="4" cols="40"></textarea>
+
+      <label for="userName">Your Name:</label>
+      <input type="text" id="userName" name="userName">
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - WDD 131 Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
